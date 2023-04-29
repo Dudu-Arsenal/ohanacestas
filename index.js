@@ -13,3 +13,13 @@ function nextImage(){
 document.querySelector('#seta_up').addEventListener('click', () => {
     window.scrollTo(top)
 })
+
+const menuLinks = document.querySelectorAll('.links-header a');
+
+menuLinks.forEach((link) =>{
+    link.addEventListener('click', () =>{
+        setTimeout(()=>{
+            history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
+        }, 1);
+    })
+})
