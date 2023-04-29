@@ -97,13 +97,16 @@ header{
     text-decoration: none;
     color: #1f1f1f;
     font-size: 135%;
+    border-bottom: 0;
     transition: all .3s ease-in-out;
 }
 
 .link-header:hover{
-    background-color: rgba(180, 127, 180, 0.349);
     transition: all .2s ease-in-out;
-    border-bottom: 3px solid rgb(255, 255, 255);
+    background-color: rgba(180, 127, 180, 0.349);
+    border-bottom: 3px solid rgb(92, 36, 105);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
 main{
