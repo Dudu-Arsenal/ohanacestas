@@ -1,21 +1,10 @@
-let count = 1;
-setInterval( function(){
-    nextImage();
-}, 5000)
-function nextImage(){
-    count++;
-    if(count>4){
-        count = 1;
-    }
-    document.getElementById("radio"+count).checked = true;
-}
-
+//SETA PARA O TOPO
 document.querySelector('#seta_up').addEventListener('click', () => {
     window.scrollTo(top)
 })
 
+//REMOVER O ID DO LINK DO SITE
 const menuLinks = document.querySelectorAll('.links-header a');
-
 menuLinks.forEach((link) =>{
     link.addEventListener('click', () =>{
         setTimeout(()=>{

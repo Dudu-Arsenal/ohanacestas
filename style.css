@@ -44,8 +44,8 @@ header{
 }
 
 .logo img{
-    width: 50px;
-    height: 100%;
+    width: 47px;
+    /* height: 100%; */
 }
 
 .logo-name{
@@ -162,7 +162,16 @@ main{
 
 
 .conteudo1{
-    background-image: linear-gradient(to top, #d8aaee, whitesmoke);
+    /* background-image: linear-gradient(to top, #d8aaee, whitesmoke); */
+    height: 350px;
+    display: flex;
+    background-image: url('./assets/backcesta.jpg');
+    background-position: center;
+    background-position-y: -95px;
+    background-position-x: 30px;
+    background-repeat: no-repeat;
+    margin: auto;
+    max-width: 1360px;
 }
 
 .conteudo1-content{
@@ -184,6 +193,7 @@ main{
     border-radius: 10px;
     flex-direction: column;
     align-items: left;
+    margin-left: 40px;
     justify-content: space-between;
     /* box-shadow: inset 0px 0px 20px 30px rgb(241, 205, 255); */
 }
@@ -204,110 +214,6 @@ main{
     transition: all .6s ease-in-out;
     scale: 1.08;
 } */
-
-.slider{
-    margin: 20px 10px 20px 10px;
-    width: 700px;
-    height: 350px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow:  1px 1px 10px #1f1f1f;
-}
-
-.slides{
-    width: 400%;
-    height: 350px;
-    display: flex;
-}
-
-.slides input{
-    display: none;
-}
-
-.slide{
-    width: 25%;
-    display: block;
-    margin: auto 0;
-    position: relative;
-    transition: 2s ease;
-}
-
-.slide img{
-    width: 700px;
-}
-
-.manual-navigation{
-    position: absolute;
-    width: 700px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn{
-    border: 2px solid rgb(0, 0, 0);
-    padding: 6px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:last-child){
-    margin-right: 40px;
-}
-
-.manual-btn:hover{
-    background-color: rgb(0, 0, 0);
-}
-
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .first{
-    margin-left: -50%;
-}
-
-#radio4:checked ~ .first{
-    margin-left: -75%;
-}
-
-.navigation-auto div{
-    border: 2px solid rgba(237, 150, 255, 0);
-    padding: 6px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navigation-auto{
-    position: absolute;
-    width: 700px;
-    margin-top: 310px;
-    display: flex;
-    justify-content: center;
-}
-
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: rgb(0, 0, 0);
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: rgb(0, 0, 0);
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: rgb(0, 0, 0);
-}
-#radio4:checked ~ .navigation-auto .auto-btn4   {
-    background-color: rgb(0, 0, 0);
-}
 
 .conteudo2{
     position: relative;
@@ -365,13 +271,13 @@ main{
     display: flex;
     align-items: center;
     text-align: center;
-    width: 500px;
+    width: 400px;
 }
 
 .texto-img img{
     border-radius: 10px;
     border: 2px solid   #d5a3e6;
-    width: 450px;
+    width: 350px;
 }
 
 .left-side .texto-img{
@@ -380,19 +286,19 @@ main{
     border-right: 5px solid #47005e96;
     border-bottom: 5px solid #47005e96;
     border-top-left-radius: 25px;
-    border-top-right-radius: 80px;
+    border-top-right-radius: 70px;
     border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 80px;
+    border-bottom-left-radius: 70px;
 }
 
 .right-side .texto-img{
     margin-bottom: 5px;
-    border-top-left-radius: 80px;
+    border-top-left-radius: 70px;
     border-top-right-radius: 25px;
     background-color: #f7e3ff;
     border-left: 5px solid #47005e96;
     border-bottom: 5px solid #46005e96;
-    border-bottom-right-radius: 100px;
+    border-bottom-right-radius: 70px;
     border-bottom-left-radius: 25px;
 }
 
@@ -408,8 +314,13 @@ main{
 }
 
 .name-price h1{
-    font-size: 130%;
+    font-size: 140%;
+    font-weight: bold;
     text-transform: uppercase;
+}
+
+.name-price p{
+    font-size: 110%;
 }
 
 .conteudo3{
@@ -601,27 +512,12 @@ main{
 }
 
 @media (max-width: 768px){
-    .slider{
-        width: 350px;
-        height: 200px;
+    .conteudo1-content{
+        justify-content: center;
     }
-
-    .slides{
-        height: 200px;
+    .sobre-text{
+        margin: 0;
     }
-
-    .navigation-auto{
-        width: 350px;
-        margin-top: 160px;
-    }
-
-    .manual-navigation{
-        width: 350px;
-    }
-    .slide img{
-        width: 350px;
-    }
-
 }
 
 @media (max-width: 570px) {
@@ -663,7 +559,19 @@ main{
 }
 
 @media (max-width: 400px){
+    body, header{
+        min-width: 330px;
+    }
     .sobre-text{
         width: 350px;
+    }
+    .links-header{
+        width: 100%;
+        min-width: 330px;
+        justify-content: space-between;
+    }
+     .links-header a{
+        font-size: 120%;
+        padding: 0 5px;
     }
 }
