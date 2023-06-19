@@ -463,6 +463,7 @@ main{
 
     .conteudo1-content{
         flex-direction: column;
+        justify-content: center;
     }
 
     .left-side, .right-side{
@@ -555,6 +556,34 @@ main{
 @media (max-width: 510px){
     .sobre-text{
         font-size: 80%;
+    }
+    .texto-img:hover{
+        scale: 1.01;
+    }
+
+    .contato-content{
+        border: 4px solid #d78df0;
+    }
+
+    .contato-content:hover{
+        transition: all .4s ease-in-out;
+        border: 4px solid #d78df0 !important;
+        scale: 1;
+    }
+
+    .contato-content .fa-instagram, .contato-content .instagram{
+        transition: all .4s ease-in-out;
+        color: #c02168;
+    }
+    
+    .contato-content .fa-whatsapp, .contato-content .whatsapp{
+        transition: all .4s ease-in-out;
+        color: 	#189b48;
+    }
+    
+    .contato-content .fa-facebook-square, .contato-content .facebook{
+        transition: all .4s ease-in-out;
+        color: 	#2b509b;
     }
 }
 
