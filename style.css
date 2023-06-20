@@ -611,15 +611,18 @@ main{
         min-width: 330px;
     }
     .sobre-text{
-        width: 350px;
+        width: 320px;
     }
     .links-header{
         width: 100%;
         min-width: 330px;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
      .links-header a{
         font-size: 120%;
         padding: 0 5px;
+    }
+    .cesta-personalizada{
+        font-size: 150%;
     }
 }
