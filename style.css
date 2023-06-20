@@ -6,6 +6,7 @@
     font-family: Poppins, sans-serif;
     scroll-behavior: smooth;
     scroll-padding-top: 50px;
+    --white-purple: #fefaff;
 }
 
 body{
@@ -110,7 +111,7 @@ header{
 }
 
 main{
-    background-color: #f1cdff;
+    background-color: #dfc5ee;
 }
 
 
@@ -165,10 +166,12 @@ main{
     /* background-image: linear-gradient(to top, #d8aaee, whitesmoke); */
     height: 350px;
     display: flex;
-    background-image: url('./assets/backcesta.jpg');
+    background-image: url('./assets/backgroundcesta.png');
+    background-color: #dfc5ee;
+    background-size: 1060px 600px;
     background-position: center;
-    background-position-y: -95px;
-    background-position-x: 30px;
+    background-position-y: -60px;
+    background-position-x: 130px;
     background-repeat: no-repeat;
     margin: auto;
     max-width: 1360px;
@@ -219,7 +222,7 @@ main{
     position: relative;
     width: 100%;
     overflow: hidden;
-    background-color: rgb(241, 205, 255);
+    background-color: var(--white-purple);
     padding: 20px 0;
 }
 
@@ -324,7 +327,7 @@ main{
 }
 
 .conteudo3{
-    background-image: linear-gradient(to bottom, #d8aaee, whitesmoke);
+    background-image: linear-gradient(to bottom, #dec1ee, var(--white-purple));
     padding: 20px;
 }
 
@@ -417,7 +420,7 @@ main{
 
 .contato-content:hover .fa-whatsapp, .contato-content:hover .whatsapp{
     transition: all .4s ease-in-out;
-    color: 	#1dbd58;
+    color: 	#189b48;
 }
 
 .contato-content:hover .fa-facebook-square, .contato-content:hover .facebook{
@@ -536,13 +539,23 @@ main{
     }
     .sobre-text{
         width: 400px;
+        padding: 10px 5px;
+        margin: 15px 0;
+        border-bottom: 4px solid #c48ce4;
+        border-top: 4px solid #c48ce4;
+    }
+    .sobre-text h1{
+        text-align: center;
+    }
+    .sobre-text p{
+        text-align: left;
     }
     .cestas-title{
         padding-top: 60px;
         font-size: 150%;
     }
     .texto-img{
-        width: 350px;
+        width: 300px;
         border-radius: 10px !important;
     }
     .texto-img .name-price{
@@ -550,6 +563,12 @@ main{
     }
     .texto-img img{
         width: 100%;
+    }
+    .name-price h1{
+        font-size: 130%;
+    }
+    .conteudo1{
+        background-image: none;
     }
 }
 
